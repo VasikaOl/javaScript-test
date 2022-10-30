@@ -27,15 +27,15 @@
 //checkTicket('005212') === true
 //checkTicket('133700') === true
 //checkTicket('123032') === false
-let total1 = 0;
-let total2 = 0;
+// let total1 = 0;
+// let total2 = 0;
 
-const checkTicket = function(string) {
+// const checkTicket = function(string) {
     
 
 
-}
+// }
 
-checkTicket('005212');
-checkTicket('133700');
-checkTicket('123032');
+// checkTicket('005212');
+// checkTicket('133700');
+// checkTicket('123032');
