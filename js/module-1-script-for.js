@@ -128,26 +128,26 @@
 // В результаті вивести повідомлення:
 // 'Оформляємо замовлення на суму [сума] зі знижкою [знижка]%'
 
-let totalSpent = 100080;
-let payment = 20;
-let discount = 0;
+// let totalSpent = 100080;
+// let payment = 20;
+// let discount = 0;
 
-if (totalSpent < 100) {
-    console.log(`не партнер, знижка - 0%`);
-    discount = 0;
-} else if (totalSpent >= 100 && totalSpent < 1000) {
-    console.log(`бронзовний партнер, знижка - 2%`);
-    discount = 0.02;
-} else if (totalSpent >= 1000 && totalSpent < 5000) {
-    console.log(`срібний партнер, знижка - 5%`);
-    discount = 0.05;
-} else {
-    console.log(`золотий партнер, знижка - 10%`);
-    discount = 0.1;
-} 
-payment = payment - payment * discount;
+// if (totalSpent < 100) {
+//     console.log(`не партнер, знижка - 0%`);
+//     discount = 0;
+// } else if (totalSpent >= 100 && totalSpent < 1000) {
+//     console.log(`бронзовний партнер, знижка - 2%`);
+//     discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//     console.log(`срібний партнер, знижка - 5%`);
+//     discount = 0.05;
+// } else {
+//     console.log(`золотий партнер, знижка - 10%`);
+//     discount = 0.1;
+// } 
+// payment = payment - payment * discount;
 
-console.log(`Оформляємо замовлення на суму ${payment} зі знижкою ${discount * 100}%`);
+// console.log(`Оформляємо замовлення на суму ${payment} зі знижкою ${discount * 100}%`);
 
-totalSpent += payment;
-console.log(`Загальна сума витраченого в магазині ${totalSpent}`);
+// totalSpent += payment;
+// console.log(`Загальна сума витраченого в магазині ${totalSpent}`);
