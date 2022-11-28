@@ -153,5 +153,5 @@
 // }
 // );
 
-const getSortedFriends = users => [...users].sort((a, b) => a.friends.length.localeCompare(b.friends.length)).filter((element, index, array) => array.indexOf(element) === index).flatMap(user => user.friends);
-console.log(users);
+// const getSortedFriends = users => [...users].sort((a, b) => a.friends.length.localeCompare(b.friends.length)).filter((element, index, array) => array.indexOf(element) === index).flatMap(user => user.friends);
+// console.log(users);
