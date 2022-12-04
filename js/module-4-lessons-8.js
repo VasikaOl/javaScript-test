@@ -52,18 +52,65 @@
 
 // outerShowTag();
 // ====================================== //
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//         console.log('showTag -> this.tag', this.tag);
+//     },
+// };
 
-const user = {
-    tag: 'Mango',
-    showTag() {
-        console.log('showTag -> this', this);
-        console.log('showTag -> this.tag', this.tag);
-    },
+// const invokeAction = function (action) {
+//     console.log(action);
+
+//     action();
+// };
+
+// invokeAction(user.showTag);
+// ====================================== //
+// const fn = function () {
+//     console.log('fn -> this', this)
+// };
+
+// fn();
+// ====================================== //
+// const book = {
+//     title: 'React for beginners',
+//     showThis() {
+//         console.log('showThis -> this', this);
+//     },
+//     showTitle() {
+//         console.log('showTitle -> this.title', this.title);
+//     },
+// };
+// book.showThis();
+
+// const outerShowThis = book.showThis;
+// outerShowThis();
+
+// const outerShowTitle = book.showTitle;
+// outerShowTitle();
+// ====================================== //
+
+const makeChangeColor = function () {
+    const changeColor = function (color) {
+        console.log('changeColor - > this', this);
+        // this.color = color;
+    };
+    
+    // changeColor();
+
+    const sweater = {
+        color: 'teal',
+    };
+    sweater.updateColor = changeColor;
+
+    // sweater.updateColor('red');
+
+    return sweater.updateColor;
 };
 
-const invokeAction = function (action) {
-    console.log(action);
+const swapColor = makeChangeColor();
+swapColor('blue');
 
-    action();
-};
-invokeAction(user.showTag);
+// makeChangeColor();
