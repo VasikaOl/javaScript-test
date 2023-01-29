@@ -92,25 +92,25 @@
 // outerShowTitle();
 // ====================================== //
 
-const makeChangeColor = function () {
-    const changeColor = function (color) {
-        console.log('changeColor - > this', this);
-        // this.color = color;
-    };
+// const makeChangeColor = function () {
+//     const changeColor = function (color) {
+//         console.log('changeColor - > this', this);
+//         // this.color = color;
+//     };
     
-    // changeColor();
+//     // changeColor();
 
-    const sweater = {
-        color: 'teal',
-    };
-    sweater.updateColor = changeColor;
+//     const sweater = {
+//         color: 'teal',
+//     };
+//     sweater.updateColor = changeColor;
 
-    // sweater.updateColor('red');
+//     // sweater.updateColor('red');
 
-    return sweater.updateColor;
-};
+//     return sweater.updateColor;
+// };
 
-const swapColor = makeChangeColor();
-swapColor('blue');
+// const swapColor = makeChangeColor();
+// swapColor('blue');
 
-// makeChangeColor();
+// // makeChangeColor();
